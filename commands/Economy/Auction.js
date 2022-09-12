@@ -30,7 +30,7 @@ const ms = require("ms");
 module.exports = {
     name: "auction",
     description: "auction",
-    category: "Testing",
+    category: "economy",
     args: true,
     options: [""],
     cooldown: 3,
@@ -42,7 +42,7 @@ module.exports = {
         const embed = new Discord.MessageEmbed()
         if (!user) return message.channel.send(`Please pick a starter before using this command.`);
         
-    let abc = ['1010448776940498964']
+    let abc = ['1010369442829582386']
 
     if(!abc.includes(message.guild.id)) return message.channel.send(` > Auctions can only be held in the Official Server`);
 
@@ -72,7 +72,7 @@ module.exports = {
                     }
                     else {
                         const no = ((index + 1) * 20) - 20
-                        embed.setDescription(chunks[index].map((r, i) => `**Level ${r.pokemon.level} ${(r.pokemon.shiny ? "✨" : "")}${r.pokemon.name.replace(/-+/g, " ").replace(/\b\w/g, l => l.toUpperCase())}** | ID: ${r.num} | IV: ${r.pokemon.totalIV}% | Bid: ${new Intl.NumberFormat('en-IN').format(r.bid)} Psycoins(s) `).join('\n') || "There is No Item Listed in the Auctions!")
+                        embed.setDescription(chunks[index].map((r, i) => `**Level ${r.pokemon.level} ${(r.pokemon.shiny ? "✨" : "")}${r.pokemon.name.replace(/-+/g, " ").replace(/\b\w/g, l => l.toUpperCase())}** | ID: ${r.num} | IV: ${r.pokemon.totalIV}% | Bid: ${new Intl.NumberFormat('en-IN').format(r.bid)} Pokecoins(s) `).join('\n') || "There is No Item Listed in the Auctions!")
                         embed.setFooter(`Showing ${index + 1}-${chunks.length} of ${all.length} pokémon matching this search.`);
                     }
                     embed.setAuthor(`${message.author.tag}'s' Auction Listings`)
@@ -92,7 +92,7 @@ module.exports = {
                     index = ((index % chunks.length) + chunks.length) % chunks.length;
                     const no = ((index + 1) * 20) - 20
                     embed.setAuthor(`${message.author.tag}'s Auction Listings`)
-                    embed.setDescription(chunks[index].map((r, i) => `**Level ${r.pokemon.level} ${(r.pokemon.shiny ? "✨" : "")}${r.pokemon.name.replace(/-+/g, " ").replace(/\b\w/g, l => l.toUpperCase())}** | ID: ${r.num} | IV: ${r.pokemon.totalIV}% | Bid: ${new Intl.NumberFormat('en-IN').format(r.bid)} Psycoins(s) | Time: ${ms(r.time - Date.now())}`).join('\n') || "There is No Item Listed in the Auctions!")
+                    embed.setDescription(chunks[index].map((r, i) => `**Level ${r.pokemon.level} ${(r.pokemon.shiny ? "✨" : "")}${r.pokemon.name.replace(/-+/g, " ").replace(/\b\w/g, l => l.toUpperCase())}** | ID: ${r.num} | IV: ${r.pokemon.totalIV}% | Bid: ${new Intl.NumberFormat('en-IN').format(r.bid)} Pokecoins(s) | Time: ${ms(r.time - Date.now())}`).join('\n') || "There is No Item Listed in the Auctions!")
                     embed.setFooter(`Showing ${index + 1}-${chunks.length} of ${all.length} Pokémons matching this search.`)
                     embed.setColor('#add8e6')
                     return message.channel.send(embed);
@@ -235,7 +235,7 @@ module.exports = {
             let ix = ((index % chunks.length) + chunks.length) % chunks.length;
             let actualpage = index + 1
             index = ((index % chunks.length) + chunks.length) % chunks.length;
-            if (isNaN(e[1])) txt = s.map((item, i) => `**Level ${item.pokemon.level} ${item.pokemon.shiny ? "✨ " : ""}${item.pokemon.name.replace(/-+/g, " ").replace(/\b\w/g, l => l.toUpperCase())}** | ID: ${item.pokemon.num} | IV: ${item.pokemon.totalIV}% | Bid: ${new Intl.NumberFormat('en-IN').format(item.bid)} Psycoins | Time Left: ${ms(item.time - Date.now())}`).slice(0, 15).join("\n")
+            if (isNaN(e[1])) txt = s.map((item, i) => `**Level ${item.pokemon.level} ${item.pokemon.shiny ? "✨ " : ""}${item.pokemon.name.replace(/-+/g, " ").replace(/\b\w/g, l => l.toUpperCase())}** | ID: ${item.pokemon.num} | IV: ${item.pokemon.totalIV}% | Bid: ${new Intl.NumberFormat('en-IN').format(item.bid)} Pokecoins | Time Left: ${ms(item.time - Date.now())}`).slice(0, 15).join("\n")
 
             if (Number(args[1])) {
                 if (txt == "") {
@@ -246,7 +246,7 @@ module.exports = {
                 }
 
                 embed
-                    .setTitle(`Psycord Auction Hub`)
+                    .setTitle(`PokeFree Auction Hub`)
                     .setColor("#add8e6")
                     .setDescription((chunks[index].map((item, i) => { return `**${item.pokemon.name.replace(/-+/g, " ").replace(/\b\w/g, l => l.toUpperCase())}** ${item.pokemon.shiny ? "✨" : ""} | Level: ${item.pokemon.level} | Number: ${item.pokemon.num} | IV: ${item.pokemon.totalIV}% | Bid: ${new Intl.NumberFormat('en-IN').format(item.bid)} | Psycoin(s)` }).join("\n")))
                 if (args[1] > chunks.length) {

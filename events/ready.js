@@ -27,9 +27,9 @@ module.exports = async client => {
     );
 
 
-    let acts = [
+    let acts = [//puto q haces
         { name: `p!help  @PokeFree `, type: `LISTENING`},
-        { name: `Jack〝Dᴄ〞`, type: `PLAYING` }
+        { name: ` Eduardo GP#1977`, type: `PLAYING` }
     ],
         act = 0;
     setInterval(() => {

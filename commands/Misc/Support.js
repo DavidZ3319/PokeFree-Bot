@@ -14,11 +14,11 @@ module.exports = {
     args: false,
     usage: ["support"],
     permissions: [],
-    aliases: [""],
+    aliases: ["soporte"],
     execute: async (client, message, args, prefix, guild, color, channel) => {
 
       let embed = new MessageEmbed()
-      .setDescription(`**[Click Here](https://dsc.gg/coderzhangout) to join the support server..!!**`)
+      .setDescription(`**[Click Aquí](https://discord.gg/FT6ZV5AGVf) para unirte al servidor de soporte.!!**`)
       .setColor(color)
       message.channel.send(embed)
 

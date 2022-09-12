@@ -22,9 +22,9 @@ module.exports = {
 
     if (args[0].toLowerCase() == "egg") {
       
-              if (user.balance < 3001) return message.channel.send(`You don't have enough balance to buy egg`)
+              if (user.balance < 999) return message.channel.send(`You don't have enough balance to buy egg`)
 
-      user.balance = user.balance - 3000
+      user.balance = user.balance - 1000
       user.egg = user.egg + 1
       await user.save()
 

@@ -11,9 +11,9 @@ token: (process.env.token), // this will be your bot token
   yes: "✅",
   no: "❌",
 
-  owners: ["8775773368334965","9689160104050708","76399136338439500","7408938086449202","8951419673429734", "96455473951998366"], // this will be the users with all perms
+  owners: ["996191835926044702","968960104050708","7639916338439500","902312943574741102","895141973429734", "9645473951998366"], // this will be the users with all perms
 
-  special: ["74808938086449202","74890893886449202",], 
+  special: ["7480898086449202","7489893886449202",], 
 
   mongo_atlas: {
     username: process.env.username, 

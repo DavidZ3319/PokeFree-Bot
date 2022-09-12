@@ -17,8 +17,8 @@ module.exports = {
 
       
       let embed = new MessageEmbed()
-      .setDescription(`**[Click Here To Invite Me](https://discord.com/api/oauth2/authorize?client_id=928676583298977802&permissions=8&scope=bot%20applications.commands)**`)
-      .setFooter("")
+      .setDescription(`**[Click Here To Invite Me](https://discord.com/oauth2/authorize?client_id=1008538206603595806&permissions=517611060433&scope=bot%20applications.commands)**`)
+      .setFooter("Gracias por invitar al bot")
       .setColor(color)
       message.channel.send(embed)
 

@@ -107,7 +107,7 @@ module.exports = {
           await user.save() 
         }
       } else {
-        u = ` Congratulations ${message.author}! You have caught a ${(poke.shiny && emojis[poke.name.toLowerCase()+"_sh"]) ? emojis[poke.name.toLowerCase()+"_sh"] : ""}${(!poke.shiny && emojis[poke.name.toLowerCase()]) ? emojis[poke.name.toLowerCase()] : ""} Level ${poke.level} ${poke.shiny ? "✨ " : ""}${poke.name.replace(/-+/g, " ").replace(/-+/g, " ").replace(/\b\w/g, l => l.toUpperCase())}! ${balanceToAdd == 0 ? "." : `You got ${balanceToAdd} Starcoins!`}` 
+        u = ` Congratulations ${message.author}! You have caught a ${(poke.shiny && emojis[poke.name.toLowerCase()+"_sh"]) ? emojis[poke.name.toLowerCase()+"_sh"] : ""}${(!poke.shiny && emojis[poke.name.toLowerCase()]) ? emojis[poke.name.toLowerCase()] : ""} Level ${poke.level} ${poke.shiny ? "✨ " : ""}${poke.name.replace(/-+/g, " ").replace(/-+/g, " ").replace(/\b\w/g, l => l.toUpperCase())}! ${balanceToAdd == 0 ? "." : `You got ${balanceToAdd} Pokecoins!`}` 
         footer = " "
       }
 //${poke.shiny ? "Shiny " : ""}${poke.name.replace(/-+/g, " ").replace(/-+/g, " ").replace(/\b\w/g, l => l.toUpperCase())}

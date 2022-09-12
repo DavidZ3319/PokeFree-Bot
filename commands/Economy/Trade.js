@@ -92,7 +92,7 @@ module.exports = {
          Pcollector.stop("stopped");
          cooldown.delete(message.author.id);
          cooldown.delete(user.id)
-         return message.channel.send(`<:caught:894169386657669120> You canceled this trade!`);
+         return message.channel.send(`<:gastly:1018339189353369660> You canceled this trade!`);
        }
        const saveEmoji = ":green_circle:";
        
