@@ -25,8 +25,11 @@ module.exports = {
 let embed = new Discord.MessageEmbed()
 .setColor(color)
 .setTitle(`${message.author.username}'s Eggs 🥚`)
-.setDescription(`You currently have \`${user.egg}\` Egg.`)
-.setFooter(`Use p!hatch egg to Hatch the Egg`)
+ .addField("**__OWNED EGGS:__**",
+`>>>  Common Eggs : ${user.commonegg}
+      Rare Eggs : ${user.rareegg}
+      Legendary Eggs : ${user.legendaryegg} `)
+
 .setThumbnail('https://cdn.discordapp.com/attachments/891557291436949504/951866284717510726/Pokemon_Egg_icon-icons.com_67525.png')
 
 

@@ -29,13 +29,23 @@ const UserSchema = new mongoose.Schema({
     diamondcrate: { type: Number, default: 0 },
     deluxecrate: { type: Number, default: 0 },
     trade : { type: Boolean, default: false },
-    egg: {type:Number, default: 0},
+    commonegg: {type:Number, default: 0},
  questcaught: {type:Number, default: 0},
   questclaim: {type:Number, default: 0},
   questclaim2: {type:Number, default: 0},
    questclaim3: {type:Number, default: 0},
   questclaim4: {type:Number, default: 0},
   openedegg: {type:Number, default: 0},
+rareegg: {type:Number, default: 0},
+legendaryegg: {type:Number, default: 0},
+  hatchedcommon: {type:Number, default: 0},
+  hatchedrare: {type:Number, default: 0},
+    hatchedlegendary: {type:Number, default: 0},
+  
+
+  /*>>  Common Eggs : ${user.commonegg}
+      Rare Eggs : ${user.rareegg}
+      Legendary Eggs : ${user.legendaryegg} */
   owner: {type:Number, default: 0},
 oldfishingrod: {type:Number, default: 0},
   newfishingrod: {type:Number, default: 0},
@@ -46,6 +56,7 @@ oldfishingrod: {type:Number, default: 0},
   oldroduse: {type:Number, default: 0},
    newroduse: {type:Number, default: 0},
    techroduse: {type:Number, default: 0},
+   huntuse: {type:Number, default: 0}
 });
 
 module.exports = mongoose.model("User", UserSchema);

@@ -418,7 +418,7 @@ module.exports = {
       if (args[1].toLowerCase() == "newrod") {
          
       if (user.balance <= 9999) return message.channel.send("You don't have enough balance ( `10,000` ) to buy the pokemon **NEW FIHSING ROD**")
-      if(user.newfishingrod === 1) return message.channel.send(">  You Already Own A Hunting Riffle In Your Inventory")
+      if(user.newfishingrod === 1) return message.channel.send(">  You Already Own A NEW ROD In Your Inventory")
      user.balance = user.balance - 10000;
      user.newfishingrod = user.newfishingrod +1;
      await user.save();
@@ -427,7 +427,7 @@ module.exports = {
         if (args[1].toLowerCase() == "techrod") {
          
       if (user.balance <= 49999) return message.channel.send("You don't have enough balance ( `50000` ) to buy the pokemon **TECH FIHSING ROD**")
-      if(user.techfishingrod === 1) return message.channel.send(">  You Already Own A Hunting Riffle In Your Inventory")
+      if(user.techfishingrod === 1) return message.channel.send(">  You Already Own A TECH ROD In Your Inventory")
      user.balance = user.balance - 10000;
      user.techfishingrod = user.techfishingrod +1;
      await user.save();
@@ -469,5 +469,42 @@ module.exports = {
       return message.channel.send('>  Succesfully bought Tech Hunting Riffle. You Can Now Start Hunting and use the p!newriffle command. Also Added A Shiny Hunting Pass . Which will allow you to hunt shiny pokemon using the tech rod' )
       }
      }
+    else if (cmd == "10") {
+      let option = ["commonegg", "rareegg","legendaryegg"]
+      if (!args[1]) return message.channel.send(`Cmon dude! You don't wanna buy whole SHOP 8.\n\`\`\`\n${prefix}shopbuy 9 <item>\n\`\`\``)
+      if (!option.toString().toLowerCase().includes(args[1])) return message.channel.send("Invalid item name provided.")
+
+        if (args[1].toLowerCase() == "commonegg") {
+         let commoneggembed = new Discord.MessageEmbed()
+          .setDescription('You Successfully Purchased 1 Common Egg for 1000 Poke Coins. Type p!hatch common` to hatch them')
+          .setColor(color)
+      if (user.balance <= 999) return message.channel.send("You don't have enough balance ( `1000` ) to buy the pokemon **Common Egg**")
+    
+     user.balance = user.balance - 1000;
+     user.commonegg = user.commonegg +1;
+     await user.save();
+      return message.channel.send(commoneggembed)
+      }
+       
+        if (args[1].toLowerCase() == "legendaryegg") {
+          let legendaryeggembed = new Discord.MessageEmbed()
+          .setDescription('You Successfully Purchased 1 Legendary Egg for 5000 Poke Coins. Type p!hatch legendary` to hatch them')
+      if (user.balance <= 4999) return message.channel.send("You don't have enough balance ( `5000` ) to buy the pokemon **Legendary Egg**")
+    
+     user.balance = user.balance - 5000;
+     user.legendaryegg = user.legendaryegg +1;
+     await user.save();
+      return message.channel.send(legendaryeggembed)
+      }
+       if (args[1].toLowerCase() == "rareegg") {
+          let rareeggembed = new Discord.MessageEmbed()
+          .setDescription('You Successfully Purchased 1 Rare Egg for 2000 Poke Coins. Type p!hatch rare to hatch them')
+      if (user.balance <= 1999) return message.channel.send("You don't have enough balance ( `2000` ) to buy the pokemon **Rare Egg**")
+    
+     user.balance = user.balance - 2000;
+     user.rareegg = user.rareegg +1;
+     await user.save();
+      return message.channel.send(rareeggembed)
+      }
    } 
-}
+}}

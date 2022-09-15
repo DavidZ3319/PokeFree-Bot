@@ -13,6 +13,7 @@ let User = require("../../models/user.js");
 let levelUp = require("../../db/levelup.js")
 let Spawn = require("../../models/spawn.js");
 let pokemon = require("../../db/pokemon.js");
+let eventpokes = require("../../db/eventpokes.js");
 let forms = require("../../db/forms.js");
 let primal = require("../../db/primal.js");
 let shinyDb = require("../../db/shiny");

@@ -32,15 +32,16 @@ module.exports = {
       .addField("Pokémon Forms | 5", `\`Forms & Transformations\``)
       .addField("Gigantamax | 6", `\`Gigantamax Transformations\``)
       .addField("Shards | 7", `\`Shards Exchange\``)
-      .addField("Pokemon Skins | 8", `\`Hunting Weapons\``)
+      .addField("Item | 8", `\`Fishing Weapons\``)
+    .addField("Item | 9", `\`Hunting Weapons\``)
+    .addField("Egg Shop | 10", `\`Egg Shop\``)
+  .setImage(`https://cdn.discordapp.com/attachments/1014816521031270412/1019246905093529680/pokemart.png`)
+    
     let embed1 = new MessageEmbed()
       .setColor(color)
       .setAuthor(`Balance: ${user.balance.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} Credit(s) | Shards: ${user.shards.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} | Redeems: ${user.redeems.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}\nShop 1 - XP Boosters & Rare Candies`)
       .setDescription(`Get XP boosters to increase your XP gain from chatting and battling!`)
-      .addField("30 Minutes - 2X Multiplier | Cost:  20 Credits", `\`p!shopbuy 1 30m\``)
-      .addField("1 Hour - 2X Multiplier | Cost:  40 Credits", `\`p!shopbuy 1 1h\``)
-      .addField("2 Hours - 2X Multiplier | Cost:  70 Credits", `\`p!shopbuy 1 2h\``)
-      .addField("3 Hours - 2X Multiplier | Cost:  90 Credits", `\`p!shopbuy 1 3h\``)
+      
       .addField("Rare Candy | Cost:  75 Credits/Each", `Rare candies level up your selected pokémon by one level for each candy you feed it.\n\`${prefix}shopbuy 1 candy [amount]\``)
 
     let embed2 = new MessageEmbed()
@@ -170,7 +171,7 @@ module.exports = {
 
     
     let embed13 = new MessageEmbed()
-      .setAuthor(`Balance: ${user.balance.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} Credit(s) | Shards: ${user.shards.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} | Redeems: ${user.redeems.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}\nShop 8 - Fishing Shop`)
+      .setAuthor(`Balance: ${user.balance.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} Credit(s) | Shards: ${user.shards.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} | Redeems: ${user.redeems.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}\nShop 9 - Hunting Shop`)
       .setDescription("Type p!shopbuy 9 (item_name) ")
       .addField("Old Hunting Riffle - 5k cr", `Get The Old Hunting Riffle Which Will Allow You To Use p!oldrod command.\n\`${prefix}shopbuy 9 oldriffle\``)
       .addField("New Hunting Riffle - 10k cr", `Get The New Hunting Riffle Which Will Help You To Use The p!newriffle command \n\`${prefix}shopbuy 9 newriffle\``)
@@ -179,7 +180,15 @@ module.exports = {
       .setImage(`https://cdn.discordapp.com/attachments/1010448777812914179/1014169945057263769/harry.png`)
       .setThumbnail(client.user.displayAvatarURL())
         
-        
+        let embed14 = new MessageEmbed()
+      .setAuthor(`Balance: ${user.balance.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} Credit(s) | Shards: ${user.shards.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} | Redeems: ${user.redeems.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}\nShop 8 - Egg Shop`)
+      .setDescription("Type p!shopbuy 10 (item_name) ")
+      .addField("Common Egg - 1000 cr", `Buy The Common Egg.\n\`${prefix}shopbuy 10 commonegg\``)
+      .addField("Rare Egg - 2000 cr", `Buy The Rare Egg \n\`${prefix}shopbuy 10 rareegg\``)
+              .addField("Legendary Egg - 5000 cr", `Buy The Legendary Egg \n\`${prefix}shopbuy 10 legendaryegg\``)
+      .setColor(color)
+      .setImage(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU-7OIt-_NdkIoASiCUm0VVJII5POXw8rYnw&usqp=CAU`)
+      .setThumbnail(client.user.displayAvatarURL())
 
     if (!args[0]) return message.channel.send(embed)
     else if (args[0] === "1") return message.channel.send(embed1)
@@ -359,8 +368,7 @@ module.exports = {
               .addField("Mewtwo", `\`${prefix}shop 5 forms mewtwo\``, true)
               .addField("Xerneas", `\`${prefix}shop 5 forms xerneas\``, true)
               .addField("Marshadow", `\`${prefix}shop 5 forms marshadow\``, true)
-              .addField("Solgaleo", `\`${prefix}shop 5 forms solgaleo\``, true)
-              .addField("Lunala", `\`${prefix}shop 5 forms Lunala\``, true)
+              
               .setColor(color)
 
 
@@ -400,7 +408,7 @@ module.exports = {
           else if (args[0] === "8") return message.channel.send(embed12) 
              else if (args[0] === "9") return message.channel.send(embed13) 
     else if (args[0] === "7") return message.channel.send(embed9)
-      
+      else if (args[0] === "10") return message.channel.send(embed14) 
     else return message.channel.send(`Shop Number \`${args[0]}\` not found.`)
   }
 }
