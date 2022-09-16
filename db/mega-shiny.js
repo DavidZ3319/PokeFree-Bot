@@ -4,6 +4,42 @@ module.exports = [
     url: "https://imgur.com/SFEQBcE.png"
   },
   {
+    name: "milotic",
+    url: "https://media.discordapp.net/attachments/1015444758988062760/1019556630343467059/PicsArt_09-14-04.33.42.png?format=png&width=720&height=640"
+  },
+  {
+    name: "eelektross",
+    url: "https://media.discordapp.net/attachments/1015444758988062760/1019556630679015474/PicsArt_09-14-04.29.25.png?format=png&width=720&height=469"
+  },
+  {
+    name: "crobat",
+    url: "https://media.discordapp.net/attachments/1015444758988062760/1019556630930661448/PicsArt_09-14-04.28.10.png?format=png&width=720&height=456"
+  },
+  {
+    name: "hydreigon",
+    url: "https://media.discordapp.net/attachments/1015444758988062760/1015708555686465536/PicsArt_09-03-01.42.55.png"
+  },
+    {
+    name: "lapras",
+    url: "https://media.discordapp.net/attachments/1015444758988062760/1015995606285680640/PicsArt_09-03-02.06.03.png"
+  },
+    {
+    name: "butterfree",
+    url: "https://media.discordapp.net/attachments/1015444758988062760/1015996246349054132/PicsArt_09-04-08.46.08.png"
+  },
+    {
+    name: "exeggutor",
+    url: "https://media.discordapp.net/attachments/1015444758988062760/1015996622703972433/PicsArt_09-03-02.13.48-removebg-preview.png"
+  },
+    {
+    name: "arcanine",
+    url: "https://media.discordapp.net/attachments/1015444758988062760/1015997063294632097/PicsArt_09-02-09.23.33-removebg-preview.png"
+  },
+    {
+    name: "flygon",
+    url: "https://i.imgur.com/DJPGULx.png"
+  },
+  {
     name: "charizard-x",
     url: "https://imgur.com/OCscqos.png"
   },

@@ -43,3 +43,12 @@ Tyranitar
 Sceptile
 Blaziken 
 Swamper
+Lapras
+Butterfree
+Eelektross
+Flygon
+Arcanine
+Exeggutor
+Hydreigon
+Milotic
+Crobat

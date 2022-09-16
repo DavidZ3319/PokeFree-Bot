@@ -104,6 +104,7 @@ module.exports = {
 
 
     } else if (cmd == "2") {
+      return message.channel.send("Lo sentimos esta tienda está en construcción")
 
     } else if (cmd == "3") {
       if (!args[1]) return message.channel.send(`Cmon dude! You don't wanna buy whole SHOP 3.\n\`\`\`\n${prefix}buy 3 <item> [amount/name]\n\`\`\``)

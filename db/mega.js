@@ -1,4 +1,16 @@
 module.exports = [
+   //simple modelo
+   /*{
+    name: "",
+    type: "tipo1 | tipo2",
+    url: "link",
+    hp: ,
+    atk: ,
+    def: ,
+    spatk: ,
+    spdef: ,
+    speed: 
+  },*/
   {
     name: "venusaur",
     type: "grass | poison",
@@ -9,6 +21,103 @@ module.exports = [
     spatk: 122,
     spdef: 120,
     speed: 80
+  },
+  name: "eleectross", 
+    type: "electric", 
+    url: "https://i.imgur.com/Gh1Lhux.png",
+    hp: 75,
+    atk: 130,
+    def: 80,
+    spatk: 100,
+    spdef: 80,
+    speed: 45
+   {
+    name: "butterfree",
+    type: "flying | fairy",
+    url: "https://media.discordapp.net/attachments/1015444758988062760/1015497483167739914/8012-Mega-Butterfree.webp",
+    hp: 60,
+    atk: 15,
+    def: 50,
+    spatk: 155,
+    spdef: 110,
+    speed: 120
+  },
+ {
+    name: "flygon",
+    type: "ground | dragon",
+    url: "https://i.imgur.com/boAsyo3.png",
+    hp: 80,
+    atk: 130,
+    def: 90,
+    spatk: 85,
+    spdef: 90,
+    speed: 120
+  },
+   {
+    name: "arcanine",
+    type: "fire",
+    url: "https://i.imgur.com/5iUy4IH.png",
+    hp: 90,
+    atk: 130,
+    def: 90,
+    spatk: 110,
+    spdef: 90,
+    speed: 105
+  },
+   {
+    name: "exeggutor",
+    type: "dragon | psychic",
+    url: "https://i.imgur.com/McLzp5O.png",
+    hp: 95,
+    atk: 105,
+    def: 95, 
+    spatk: 145,
+    spdef: 88,
+    speed: 85
+  },
+   {
+    name: "lapras",
+    type: "water | ice",
+    url: "https://media.discordapp.net/attachments/1015444758988062760/1015447396496449597/8131-Mega-Lapras.webp",
+    hp: 110,
+    atk: 70,
+    def: 100,
+    spatk: 120,
+    spdef: 130,
+    speed: 72
+  },
+   {
+    name: "hydreigon",
+    type: "dragon",
+    url: "https://i.imgur.com/hRMAxbO.png",
+    hp: 95,
+    atk: 120,
+    def: 120,
+    spatk: 145,
+    spdef: 90,
+    speed: 118
+  },
+   {
+    name: "milotic",
+    type: "water",
+    url: "https://i.imgur.com/AbOt2Ui.png",
+    hp: 100,
+    atk: 70,
+    def: 80,
+    spatk: 120,
+    spdef: 110,
+    speed: 101
+  },
+   {
+    name: "crobat",
+    type: "flying | poison",
+    url: "https://media.discordapp.net/attachments/1015444758988062760/1016749896931483648/8169-Mega-Crobat.webp",
+    hp: 75,
+    atk: 120,
+    def: 110,
+    spatk: 70,
+    spdef: 100,
+    speed: 150
   },
   {
     name: "charizard-x",
